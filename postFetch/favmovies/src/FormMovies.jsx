@@ -33,7 +33,7 @@ class FormMovies extends Component {
         if (res.error) {
           alert(res.error);
         } else {
-          alert(`Film ajouté avec l'ID${res}`);
+          alert(`Film ajouté avec l'ID${res.id}`);
         }
       }).catch(e => {
         console.error(e);
